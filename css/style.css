@@ -1,0 +1,88 @@
+/* CSS GENERICO */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222222;
+    color: white;
+    font-family: sans-serif;
+}
+
+.boxed {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.dashed {
+    border: dashed 2px black;
+}
+
+.background-white {
+    background: white;
+}
+
+.background-gray {
+    background: gray;
+}
+
+.vertical-padded {
+    padding: 1em 0;
+}
+/* FINE CSS GENERICO */
+
+header {
+    background: lightblue;
+    padding: 1em 0 5px 0;
+}
+
+#header-container {
+    background: orange;
+}
+
+.nav-logo {
+    width: 20%;
+}
+
+.nav-links {
+    width: 60%;
+    text-align: center;
+}
+
+.nav-login {
+    width: 20%;    
+    text-align: right;
+}
+
+.nav-logo, 
+.nav-links, 
+.nav-login {
+    padding: 1em;
+}
+
+#jumbotron {
+    background-color: blue;
+    height: 100px;
+    margin-top: 1em;
+}
+
+.big-column {
+    width: 60%;
+    background-color: blueviolet;
+}
+
+.small-column {
+    width: 40%;
+    background-color: pink;
+}
+
+.big-column,
+.small-column {
+    min-height: 200px;
+}
