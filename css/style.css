@@ -6,8 +6,8 @@
 }
 
 body {
-    background: #222222;
-    color: white;
+    background: white;
+    color: black;
     font-family: sans-serif;
 }
 
@@ -24,65 +24,77 @@ body {
     border: dashed 2px black;
 }
 
-.background-white {
-    background: white;
+.bg-orange {
+    background-color: orange;
 }
 
-.background-gray {
-    background: gray;
+.bg-gray {
+    background-color: lightgray;
 }
 
-.vertical-padded {
-    padding: 1em 0;
-}
 /* FINE CSS GENERICO */
 
 header {
     background: lightblue;
-    padding: 1em 0 5px 0;
+    padding-top: 1em;
+    padding-bottom: 5px;
 }
 
-#header-container {
-    background: orange;
+.header-container {
+    min-height: 50px;
 }
 
-.nav-logo {
+.header-column-logo {
     width: 20%;
 }
 
-.nav-links {
+.header-column-links {
     width: 60%;
-    text-align: center;
+    justify-content: center;
 }
 
-.nav-login {
-    width: 20%;    
-    text-align: right;
+.header-column-login {
+    width: 20%;
+    justify-content: flex-end;
 }
 
-.nav-logo, 
-.nav-links, 
-.nav-login {
-    padding: 1em;
+.header-column-logo,
+.header-column-links,
+.header-column-login {
+    align-items: center;
 }
 
-#jumbotron {
+.jumbotron {
     background-color: blue;
-    height: 100px;
     margin-top: 1em;
 }
 
-.big-column {
-    width: 60%;
-    background-color: blueviolet;
+.jumbotron-container  {
+    justify-content: center;
+    min-height: 250px;
+    padding: 1em 0;
 }
 
-.small-column {
-    width: 40%;
-    background-color: pink;
+.jumbotron-content {
+    background-color: violet;
+    width: 80%;
 }
 
-.big-column,
-.small-column {
+.section-row {
+    padding: 1em 0;
     min-height: 200px;
+}
+
+.big-column {
+    background: lightskyblue;
+    width: 60%;
+}
+.small-column {
+    background: lightpink;
+    width: 40%;
+}
+
+.single-column {
+    background: green;
+    width: 100%;
 }
